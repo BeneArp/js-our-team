@@ -92,6 +92,6 @@ for(let i = 0; i < listaCards.length; i++){
     membriTeam[i].immagine
 
 
-    cardMembro.innerHTML = `<img class= "icona" src="${membriTeam[i].immagine}" alt=""> ${membriTeam[i].nome} <br> ${membriTeam[i].ruolo}`;
+    cardMembro.innerHTML = `<img src="${membriTeam[i].immagine}" alt=""> ${membriTeam[i].nome} <br> ${membriTeam[i].ruolo}`;
 
 }
