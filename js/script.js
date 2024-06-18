@@ -29,37 +29,37 @@ const membriTeam = [
     {
         "nome": "Wayne Barnett",
         "ruolo": "Founder & CEO",
-        "immagine": '<img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett">',
+        "immagine": 'img/wayne-barnett-founder-ceo.jpg',
     },
 
     {
         "nome": "Angela Caroll",
         "ruolo": "Chief Editor",
-        "immagine": '<img src="img/angela-caroll-chief-editor.jpg" alt="Angela Caroll">',
+        "immagine": 'img/angela-caroll-chief-editor.jpg',
     },
 
     {
         "nome": "Walter Gordon",
         "ruolo": "Office Manager",
-        "immagine": '<img src="img/walter-gordon-office-manager.jpg" alt="Walter Gordon">',
+        "immagine": 'img/walter-gordon-office-manager.jpg',
     },
 
     {
         "nome": "Angela Lopez",
         "ruolo": "Social Media Manager",
-        "immagine": '<img src="img/angela-lopez-social-media-manager.jpg" alt="Angela Lopez">',
+        "immagine": 'img/angela-lopez-social-media-manager.jpg',
     },
 
     {
         "nome": "Soctt Estrada",
         "ruolo": "Developer",
-        "immagine": '<img src="img/scott-estrada-developer.jpg" alt="Soctt Estrada">',
+        "immagine": 'img/scott-estrada-developer.jpg',
     },
 
     {
         "nome": "Barbara Ramos",
         "ruolo": "Graphic Designer",
-        "immagine": '<img src="img/barbara-ramos-graphic-designer.jpg" alt="Barbara Ramos">',
+        "immagine": 'img/barbara-ramos-graphic-designer.jpg',
     },
 ];
 
@@ -89,10 +89,9 @@ for(let i = 0; i < listaCards.length; i++){
 
     console.log(cardMembro);
 
-
-    cardMembro.innerHTML = `${membriTeam[i].immagine} ${membriTeam[i].nome} ${membriTeam[i].ruolo}`
-
+    membriTeam[i].immagine
 
 
+    cardMembro.innerHTML = `<img class= "icona" src="${membriTeam[i].immagine}" alt=""> ${membriTeam[i].nome} <br> ${membriTeam[i].ruolo}`;
 
 }
