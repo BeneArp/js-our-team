@@ -29,37 +29,37 @@ const membriTeam = [
     {
         "nome": "Wayne Barnett",
         "ruolo": "Founder & CEO",
-        "immagine": "img/wayne-barnett-founder-ceo.jpg",
+        "immagine": '<img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barnett">',
     },
 
     {
         "nome": "Angela Caroll",
         "ruolo": "Chief Editor",
-        "immagine": "img/angela-caroll-chief-editor.jpg",
+        "immagine": '<img src="img/angela-caroll-chief-editor.jpg" alt="Angela Caroll">',
     },
 
     {
         "nome": "Walter Gordon",
         "ruolo": "Office Manager",
-        "immagine": "img/walter-gordon-office-manager.jpg",
+        "immagine": '<img src="img/walter-gordon-office-manager.jpg" alt="Walter Gordon">',
     },
 
     {
         "nome": "Angela Lopez",
         "ruolo": "Social Media Manager",
-        "immagine": "img/angela-lopez-social-media-manager.jpg",
+        "immagine": '<img src="img/angela-lopez-social-media-manager.jpg" alt="Angela Lopez">',
     },
 
     {
         "nome": "Soctt Estrada",
         "ruolo": "Developer",
-        "immagine": "img/scott-estrada-developer.jpg",
+        "immagine": '<img src="img/scott-estrada-developer.jpg" alt="Soctt Estrada">',
     },
 
     {
         "nome": "Barbara Ramos",
         "ruolo": "Graphic Designer",
-        "immagine": "img/barbara-ramos-graphic-designer.jpg",
+        "immagine": '<img src="img/barbara-ramos-graphic-designer.jpg" alt="Barbara Ramos">',
     },
 ];
 
@@ -75,6 +75,6 @@ for(let i = 0; i < membriTeam.length; i++){
         console.log(persona[key]);
 
         // stampo nel dom
-        contenitore.innerText += persona[key];
+        contenitore.innerHTML += persona[key];
     }
 }
