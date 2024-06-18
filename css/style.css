@@ -4,3 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#container{
+    width: 60%;
+    margin: 15em auto;
+    padding: 4em;
+    /* debug */
+    background-color: lightslategrey;
+    height: 800px;
+}

@@ -19,6 +19,11 @@
 
 
 
+// RIFERIMENTI DOM
+const contenitore = document.getElementById("container");
+
+
+
 // creo un array di oggetti con le informazioni per ogni membro del team
 const membriTeam = [
     {
@@ -68,5 +73,8 @@ for(let i = 0; i < membriTeam.length; i++){
     // estreaggo il contenuto di ogni oggetto presente nell'array
     for(let key in persona){
         console.log(persona[key]);
+
+        // stampo nel dom
+        contenitore.innerText += persona[key];
     }
 }
