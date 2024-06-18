@@ -65,7 +65,7 @@ const membriTeam = [
 
 // console.log(membriTeam);
 
-// con un ciclo for prendo ogni oggetto dell'array
+// // con un ciclo for prendo ogni oggetto dell'array
 for(let i = 0; i < membriTeam.length; i++){
     // console.log(membriTeam[i]);
     let persona = membriTeam[i]
@@ -74,7 +74,25 @@ for(let i = 0; i < membriTeam.length; i++){
     for(let key in persona){
         console.log(persona[key]);
 
-        // stampo nel dom
-        contenitore.innerHTML += persona[key];
+        // // stampo nel dom
+        // contenitore.innerHTML += persona[key];
     }
+}
+
+
+const listaCards = document.getElementsByClassName("card");
+
+console.log(listaCards);
+
+for(let i = 0; i < listaCards.length; i++){
+    let cardMembro = listaCards[i];
+
+    console.log(cardMembro);
+
+
+    cardMembro.innerHTML = `${membriTeam[i].immagine} ${membriTeam[i].nome} ${membriTeam[i].ruolo}`
+
+
+
+
 }

@@ -7,8 +7,27 @@
 
 #container{
     width: 60%;
-    margin: 10em auto;
+    margin: 5em auto;
     padding: 4em;
     /* debug */
     background-color: lightslategrey;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: calc(90% / 3);
+    background-color: whitesmoke;
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: 10px;
+}
+
+img{
+    max-width: 100%;
+    margin-bottom: 2em;
 }
