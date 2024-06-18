@@ -58,4 +58,15 @@ const membriTeam = [
     },
 ];
 
-console.log(membriTeam);
+// console.log(membriTeam);
+
+// con un ciclo for prendo ogni oggetto dell'array
+for(let i = 0; i < membriTeam.length; i++){
+    // console.log(membriTeam[i]);
+    let persona = membriTeam[i]
+    
+    // estreaggo il contenuto di ogni oggetto presente nell'array
+    for(let key in persona){
+        console.log(persona[key]);
+    }
+}
